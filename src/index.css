@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "integralcf";
+  src: local("INTEGRALCF-REGULAR.OTF") format("otf");
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #1c1c1c;
+}
+
+@layer utilities {
+  @variants responsive {
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    body {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    #popup::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    #popup {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  }
+}
+
+.int {
+  font-family: "integralcf", sans-serif;
+}
+
+.kule {
+  background-image: url("./assets/kule.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+}
+
+.background {
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+
+}
+
+.mun {
+  background-image: url("./assets/mun.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 70%;
+
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  /* margin-left: 30px;
+  margin-top: 5px; */
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#popupbg {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+/* #map{
+  height: 180px;
+} */
+
+.bg-1{
+  background-image: url("./assets/mun.jpg");
+}
