@@ -63,7 +63,7 @@ export default function Index() {
 
     function calculateDaysToJune9th() {
         const today = new Date();
-        const june9th = new Date(today.getFullYear(), 5, 9);
+        const june9th = new Date(today.getFullYear(), 6, 2);
         const oneDay = 24 * 60 * 60 * 1000;
 
         const daysRemaining = Math.round((june9th - today) / oneDay);
