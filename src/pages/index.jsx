@@ -33,7 +33,7 @@ export default function Index() {
     }
 
     function GetCountdown() {
-        var countDownDate = new Date("June 9, 2024 9:00:00").getTime();
+        var countDownDate = new Date("July 2, 2024 9:00:00").getTime();
         var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -113,7 +113,7 @@ export default function Index() {
                             <h2 className="text-5xl font-bold text-center">Welcome Letter</h2>
                             <hr className="w-48 text-white mx-auto my-4" />
                             <p className="break-words">
-                            We are proud to introduce you to the conference we have come up with as a result of our long-term work and effort. In our conference that we will be holding on June 11-12-13, We are very excited about this conference that we will organize at the Congress Center. In the committees at our conference, our participants will discuss the common solutions  that are best suited for national problems. In between, our pr team will create a wonderful environment for you and adapt to the environment more quickly and allow you to have fun time. We have arranged the specific and important issues to be discussed in the committees for you together with our team. It is very important for us to be able to provide the environment in which you can express yourself in the best way. With our experienced team
+                            We are proud to introduce you to the conference we have come up with as a result of our long-term work and effort. In our conference that we will be holding on July 2-3-4, We are very excited about this conference that we will organize at the Congress Center. In the committees at our conference, our participants will discuss the common solutions  that are best suited for national problems. In between, our pr team will create a wonderful environment for you and adapt to the environment more quickly and allow you to have fun time. We have arranged the specific and important issues to be discussed in the committees for you together with our team. It is very important for us to be able to provide the environment in which you can express yourself in the best way. With our experienced team
                             in this conference, you can look at everything you are curious about thanks to our site and you can reach us for the things you want to ask about our team or conference.
                             </p>
                             <p className="break-words">
@@ -201,13 +201,13 @@ export default function Index() {
                         <div className="tabs grid grid-cols-9 h-full">
                             <div className="text-lg col-span-2 border-r">
                                 <button onClick={() => HandleTabClick(0)} id="0" className="h-1/3 w-full flex justify-center border-b bg-white text-black rounded-tl-3xl">
-                                    <span className="h-max my-auto">June 9</span>
+                                    <span className="h-max my-auto">July 2</span>
                                 </button>
                                 <button onClick={() => HandleTabClick(1)} id="1" className="h-1/3 w-full flex justify-center ">
-                                    <span className="h-max my-auto">June 10</span>
+                                    <span className="h-max my-auto">July 3</span>
                                 </button>
                                 <button onClick={() => HandleTabClick(2)} id="2" className="h-1/3 w-full flex justify-center rounded-bl-3xl border-t">
-                                    <span className="h-max my-auto">June 11</span>
+                                    <span className="h-max my-auto">July 4</span>
                                 </button>
                             </div>
                             <div className="text-xl col-span-7 mx-auto text-left py-32">
