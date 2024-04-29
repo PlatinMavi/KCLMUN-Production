@@ -35,7 +35,7 @@ export default function Conferance() {
             <h1 className="mt-4 mb-4 text-4xl text-center text-white int font-bold">Venue & Transportation</h1>
             {/* <hr className="mx-auto mb-4 border w-2/3" /> */}
             <div id="map" className="container  h-96 mx-auto"></div>
-            <ul className="container mx-auto mt-4 text-md grid grid-cols-3 gap-8 text-center text-white">
+            <ul className="container mx-auto mt-4 text-md grid sm:grid-cols-3 gap-8 text-center text-white">
                 <div className="w-2/3 mx-auto">
                     <h3 className="text-2xl my-4 font-bold">Option 1</h3>
                     <li className="border-t">

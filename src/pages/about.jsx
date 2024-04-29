@@ -1,5 +1,5 @@
 import React from 'react';
-import video from "../assets/bgvideo.mp4"
+// import video from "../assets/bgvideo.mp4"
 
 export default function About() {
     return (
@@ -43,9 +43,9 @@ export default function About() {
                     </div>
                 </div>
                 <div className="bg-black h-full relative">
-                    <video loop autoPlay muted className='w-full absolute z-0 -translate-y-96 opacity-40'>
+                    {/* <video loop autoPlay muted className='w-full absolute z-0 -translate-y-96 opacity-40'>
                         <source src={video} type="video/mp4"/>
-                    </video>
+                    </video> */}
 
                     <div className=" p-4 h-1/3 mt-28 m-12 w-5/6 border-r text-right z-10 absolute border-gray-300">
                         <h1 className="text-6xl font-bold">OUR TEAM</h1>

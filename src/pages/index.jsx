@@ -105,10 +105,10 @@ export default function Index() {
     }, []);
 
     return (
-        <div className="main int" id="main">
+        <div className="main int max-w-screen overflow-x-hidden" id="main">
             {showpopup &&(
                 <div className=" absolute w-screen h-screen text-white " id="popupbg">
-                    <div className="w-[450px] max-h-[600px]  mx-auto mt-36 rounded-xl p-8 bg-[#1c1c1c]" id="popup">
+                    <div className="w-[300px] sm:w-[450px] max-h-[600px]  mx-auto mt-36 rounded-xl p-8 bg-[#1c1c1c]" id="popup">
                         <div className="overflow-y-scroll max-h-[500px]" id="popup">
                             <h2 className="text-5xl font-bold text-center">Welcome Letter</h2>
                             <hr className="w-48 text-white mx-auto my-4" />
@@ -127,13 +127,13 @@ export default function Index() {
                             </p>
                         </div>
                         <hr className="w-48 text-white mx-auto my-2" />
-                        <button onClick={()=>HandlePopUp(false)} className="rounded-xl ml-[155px] bg-black px-4 py-2">Close</button>
+                        <button onClick={()=>HandlePopUp(false)} className="rounded-xl ml-[calc((100%-72px)/2)] bg-black px-4 py-2">Close</button>
                     </div>
                     
                 </div>
             )}
             
-            <div className="Jumbotron h-[calc(100vh-80px)] top-[5rem] relative">
+            <div className="Jumbotron h-[calc(100vh-80px)] sm:top-[5rem] top-[4rem] relative">
 
                 <div className="background absolute h-[calc(100vh-80px)] w-screen"></div> {/* Background */}
                 <div className="kule absolute h-[calc(100vh-80px)] w-screen z-30"></div> {/* Kule 30 */}
@@ -147,10 +147,11 @@ export default function Index() {
                     </button>
                 </div>
 
-                <div className="absolute left-[calc(50%-445px)] top-[200px] z-10"> {/* Countdown Text 10 */}
-                    <p className="text-4xl font-bold text-center  text-white">REMAINING TIME</p>
-                    <p className="font-bold text-white -translate-y-12" style={{ fontSize: '12rem' }}> <span id="countdown"></span> DAYS</p>
+                <div class="absolute top-[180px] sm:top-[250px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                    <p class="text-3xl sm:text-4xl font-bold text-center text-white">REMAINING TIME</p>
+                    <p class="text-6xl sm:text-[12rem] font-bold text-white w-screen text-center" id=""><span id="countdown"></span> DAYS</p>
                 </div>
+
             </div>
 
             <div className=" mt-20 text-white" >
@@ -160,7 +161,7 @@ export default function Index() {
                     </div>
                     <div className="absolute text-center w-screen top-16">
                         <div id="Cdwn" className="text-2xl fw  border-4 p-4 w-max mx-auto rounded-2xl"></div>
-                        <p className="quote text-4xl font-bold mt-8">"No idea can find it's true value, until it's been subjected to a free and genuine debate."</p>
+                        <p className="quote sm:text-4xl text-3xl font-bold mt-8">"No idea can find it's true value, until it's been subjected to a free and genuine debate."</p>
                         <Link href="#_" className="relative inline-block text-xl group mt-12">
                             <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-black transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-white">
                                 <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-white"></span>
@@ -172,11 +173,11 @@ export default function Index() {
                     </div>
 
                 </div>
-                <div className="grid grid-cols-2 my-12 container mx-auto ">
+                <div className="grid sm:grid-cols-2 my-12 container mx-auto ">
                     <div className="text-center int">
                         <h2 className="text-5xl font-bold">Secretary Generals Letter</h2>
                         <hr className="w-48 text-white mx-auto my-4" />
-                        <p className="mx-auto w-[500px] text-left break-words">
+                        <p className="mx-auto sm:w-[500px] w-[300px] text-left break-words">
                         Most distinguished participants and esteemed guests,
 
                         On the behalf of my team, I am honored to welcome you to the first Model United Nations Conference of Kocaeli that will be taking place on 11,12,13 June at Seka Congress Center. In my role as Secretary General, I am thrilled to see this assembly of sharp minds and enthusiastic individuals who
@@ -197,9 +198,12 @@ export default function Index() {
                         </p>
                     </div>
 
-                    <div className="text-center int bg-black rounded-3xl ">
+                    <h2 className="text-5xl sm:hidden text-center int font-bold mt-8">Schedule</h2>
+                    <hr className="w-48 text-white mx-auto my-4" />
+
+                    <div className="text-center m-4 int bg-black rounded-3xl ">
                         <div className="tabs grid grid-cols-9 h-full">
-                            <div className="text-lg col-span-2 border-r">
+                            <div className="sm:text-lg text-md col-span-2 border-r">
                                 <button onClick={() => HandleTabClick(0)} id="0" className="h-1/3 w-full flex justify-center border-b bg-white text-black rounded-tl-3xl">
                                     <span className="h-max my-auto">July 2</span>
                                 </button>
@@ -210,7 +214,7 @@ export default function Index() {
                                     <span className="h-max my-auto">July 4</span>
                                 </button>
                             </div>
-                            <div className="text-xl col-span-7 mx-auto text-left py-32">
+                            <div className="sm:text-xl text-md col-span-7 mx-auto text-left py-32">
                                 {page === 0 && (
                                     <ul className="my-auto gap-y-4 grid h-max">
                                         <li className="">10.00/11.00 - Registration</li>

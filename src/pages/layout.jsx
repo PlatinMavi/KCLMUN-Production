@@ -4,30 +4,46 @@ import logobar from "../assets/logobar.png"
 // BURAYI ELLEME BURA NAVBAR VE FOOTER
 
 const Layout = () => {
+    function handledropdown(){
+        let menu = document.getElementById("dropdown")
+        if (menu.classList.contains("hidden")){
+            menu.classList.remove("hidden")
+        }else {
+            menu.classList.add("hidden")
+        }
+    }
     return (
-        <>
-            <nav className="w-screen fixed bg-[#1c1c1c] h-20 text-white z-50 border-b-2">
+        <div className="max-w-screen overflow-x-hidden">
+            <nav className="w-screen fixed bg-[#1c1c1c] h-16 sm:h-20 text-white z-50 border-b-2">
                 <div className="container flex justify-between mx-auto">
                     <div className="mt-4 gap-x-12 flex font-bold">
-                        <Link to={"/"} className="text-5xl font-extrabold">KCLMUN</Link>
-                        <Link className=" text-2xl mt-2" to={"/conferance"}>CONFERANCE</Link>
-                        <Link className=" text-2xl mt-2" to={"/faq"}>FAQ</Link>
-                        <Link className=" text-2xl mt-2" to={"/about"}>ABOUT</Link>
-                        <Link className=" text-2xl mt-2" to={"/committes"}>COMMITTES</Link>
-
+                        <Link to={"/"} className="sm:text-5xl text-3xl ml-4 sm:ml-0 font-extrabold">KCLMUN</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/conferance"}>CONFERANCE</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/faq"}>FAQ</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/about"}>ABOUT</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/committes"}>COMMITTES</Link>
+                        <button onClick={()=>handledropdown()} className="w-8 -translate-y-1 sm:hidden absolute right-4"><hr className="mt-2 border" /> <hr className="mt-[0.625rem] border" /> <hr className="mt-3 border" /></button>
                     </div>
                     <div className="">
-                        <img src={logobar} alt="" srcset="" className="h-[78px]" />
+                        <img src={logobar} alt="" srcset="" className="h-[78px] hidden sm:block" />
                     </div>
                 </div>
-
+                <div className=" bg-[#1c1c1cec] break-words mt-2 p-4 text-center hidden mx-auto" id="dropdown">
+                        <Link className=" text-xl mt-2" to={"/conferance"}>CONFERANCE</Link> <br />
+                        <hr className="w-1/2 my-1 mx-auto" />
+                        <Link className=" text-xl mt-2" to={"/faq"}>FAQ</Link> <br />
+                        <hr className="w-2/3 my-1 mx-auto" />
+                        <Link className=" text-xl mt-2" to={"/about"}>ABOUT</Link> <br />
+                        <hr className="w-1/2 my-1 mx-auto" />
+                        <Link className=" text-xl mt-2" to={"/committes"}>COMMITTES</Link>
+                </div>
             </nav>
 
             <Outlet />
 
             <div className="container text-white rounded-2xl py-4 px-8 mx-auto bg-black h-20 my-24 flex justify-between">
-                <div className="font-bold text-3xl">KCLMUN©</div>
-                <p className="text-center text-lg mt-2 w-max int">
+                <div className="font-bold sm:text-3xl text-2xl">KCLMUN©</div>
+                <p className="text-center sm:text-lg text-sm px-4 mt-2 w-max int">
                     Proudly Presented by IT Team
                 </p>
                 <Link className="" to={"https://www.instagram.com/kclmodelun/"}>
@@ -36,7 +52,7 @@ const Layout = () => {
                     </svg>
                 </Link>
             </div>
-        </>
+        </div>
     )
 };
 

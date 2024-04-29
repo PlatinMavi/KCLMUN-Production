@@ -88,8 +88,8 @@ export default function Committes(){
                         <h1 className=" text-white text-4xl font-bold" id="h1">DISEC</h1>
                         <p className="mt-4 text-gray-200 w-1/2 break-words text-lg" id="p1">The Disarmament and International Security Committee (DISEC) is one of the six main committees of the United Nations General Assembly. Established in 1945, DISEC focuses on disarmament, global security, and the prevention of armed conflicts. Its mandate includes addressing issues such as nuclear proliferation, conventional weapons control, and disarmament treaties. DISEC serves as a forum for member states to collaborate on solutions to pressing international security challenges.</p>
                     
-                        <button className="bg-red-600 rounded-md px-4 py-2 text-white text-lg mt-4 text-center">Study Guide</button>
-                        <button className="border-2 border-red-600 ml-4 rounded-md px-4 py-2 text-white text-lg mt-4 text-center">ROP</button>
+                        <button className="bg-[#00FFCC] rounded-md px-4 py-2 text-black text-lg mt-4 text-center">Study Guide</button>
+                        <button className="border-2 border-[#00FFCC] ml-4 rounded-md px-4 py-2 text-white text-lg mt-4 text-center">ROP</button>
                     </div> 
                 </div>
                 <h2 className="text-4xl text-white my-4 font-bold">

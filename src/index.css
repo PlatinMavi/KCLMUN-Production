@@ -51,14 +51,14 @@ body {
   background-image: url("./assets/kule.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20%;
+  background-position: center;
 }
 
 .background {
   background-image: url("./assets/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20%;
+  background-position: center;
 
 }
 
