@@ -162,14 +162,14 @@ export default function Index() {
                     <div className="absolute text-center w-screen top-16">
                         <div id="Cdwn" className="text-2xl fw  border-4 p-4 w-max mx-auto rounded-2xl"></div>
                         <p className="quote sm:text-4xl text-3xl font-bold mt-8">"No idea can find it's true value, until it's been subjected to a free and genuine debate."</p>
-                        <Link href="#_" className="relative inline-block text-xl group mt-12">
+                        <a href="/conferance" className="relative inline-block text-xl group mt-12">
                             <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-black transition-colors duration-300 ease-out border-2 border-black rounded-lg group-hover:text-white">
                                 <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-white"></span>
                                 <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease"></span>
                                 <span className="relative">Apply Now!</span>
                             </span>
                             <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-black rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
-                        </Link>
+                        </a>
                     </div>
 
                 </div>
@@ -197,61 +197,62 @@ export default function Index() {
                         Secretary General</p>
                         </p>
                     </div>
+                    <div>
+                        <h2 className="text-5xl sm:hidden text-center int font-bold mt-8">Schedule</h2>
+                        <hr className="w-48 text-white mx-auto my-4" />
 
-                    <h2 className="text-5xl sm:hidden text-center int font-bold mt-8">Schedule</h2>
-                    <hr className="w-48 text-white mx-auto my-4" />
+                        <div className="text-center m-4 int bg-black rounded-3xl ">
+                            <div className="tabs grid grid-cols-9 h-full">
+                                <div className="sm:text-lg text-md col-span-2 border-r">
+                                    <button onClick={() => HandleTabClick(0)} id="0" className="h-1/3 w-full flex justify-center border-b bg-white text-black rounded-tl-3xl">
+                                        <span className="h-max my-auto">July 2</span>
+                                    </button>
+                                    <button onClick={() => HandleTabClick(1)} id="1" className="h-1/3 w-full flex justify-center ">
+                                        <span className="h-max my-auto">July 3</span>
+                                    </button>
+                                    <button onClick={() => HandleTabClick(2)} id="2" className="h-1/3 w-full flex justify-center rounded-bl-3xl border-t">
+                                        <span className="h-max my-auto">July 4</span>
+                                    </button>
+                                </div>
+                                <div className="sm:text-xl text-md col-span-7 mx-auto text-left py-32">
+                                    {page === 0 && (
+                                        <ul className="my-auto gap-y-4 grid h-max">
+                                            <li className="">10.00/11.00 - Registration</li>
+                                            <li className="">11.00/12.30 - Opening Ceremony</li>
+                                            <li className="">12.30/14.00 - Brunch</li>
+                                            <li className="">14.00/15.30 - Session I. (Workshop)</li>
+                                            <li className="">15.30/16.00 - Coffee Break</li>
+                                            <li className="">16.00/17.30 - Session II.</li>
 
-                    <div className="text-center m-4 int bg-black rounded-3xl ">
-                        <div className="tabs grid grid-cols-9 h-full">
-                            <div className="sm:text-lg text-md col-span-2 border-r">
-                                <button onClick={() => HandleTabClick(0)} id="0" className="h-1/3 w-full flex justify-center border-b bg-white text-black rounded-tl-3xl">
-                                    <span className="h-max my-auto">July 2</span>
-                                </button>
-                                <button onClick={() => HandleTabClick(1)} id="1" className="h-1/3 w-full flex justify-center ">
-                                    <span className="h-max my-auto">July 3</span>
-                                </button>
-                                <button onClick={() => HandleTabClick(2)} id="2" className="h-1/3 w-full flex justify-center rounded-bl-3xl border-t">
-                                    <span className="h-max my-auto">July 4</span>
-                                </button>
-                            </div>
-                            <div className="sm:text-xl text-md col-span-7 mx-auto text-left py-32">
-                                {page === 0 && (
-                                    <ul className="my-auto gap-y-4 grid h-max">
-                                        <li className="">10.00/11.00 - Registration</li>
-                                        <li className="">11.00/12.30 - Opening Ceremony</li>
-                                        <li className="">12.30/14.00 - Brunch</li>
-                                        <li className="">14.00/15.30 - Session I. (Workshop)</li>
-                                        <li className="">15.30/16.00 - Coffee Break</li>
-                                        <li className="">16.00/17.30 - Session II.</li>
+                                        </ul>
+                                    )}
 
-                                    </ul>
-                                )}
+                                    {page === 1 && (
+                                        <ul className="my-auto gap-y-4 grid h-max">
+                                            <li className="">9.00/10.30 - Session II.</li>
+                                            <li className="">10.30/11.00 - Coffee Break</li>
+                                            <li className="">11.00/12.30 - Session IV.</li>
+                                            <li className="">12.30/14.00 - Lunch Break</li>
+                                            <li className="">14.00/15.30 - Session V.</li>
+                                            <li className="">15.30/16.00 - Coffee Break</li>
+                                            <li className="">16.00/17.30 - Session VI.</li>
+                                        </ul>
+                                    )}
 
-                                {page === 1 && (
-                                    <ul className="my-auto gap-y-4 grid h-max">
-                                        <li className="">9.00/10.30 - Session II.</li>
-                                        <li className="">10.30/11.00 - Coffee Break</li>
-                                        <li className="">11.00/12.30 - Session IV.</li>
-                                        <li className="">12.30/14.00 - Lunch Break</li>
-                                        <li className="">14.00/15.30 - Session V.</li>
-                                        <li className="">15.30/16.00 - Coffee Break</li>
-                                        <li className="">16.00/17.30 - Session VI.</li>
-                                    </ul>
-                                )}
-
-                                {page === 2 && (
-                                    <ul className="my-auto gap-y-4 grid h-max">
-                                        <li className="">9.00/10.00 - Session VII.</li>
-                                        <li className="">10.00/10.30 - Coffee Break</li>
-                                        <li className="">10.30/12.00 - Session VIII.</li>
-                                        <li className="">12.00/13.30 - Lunch Break</li>
-                                        <li className="">13.30/14.30 - Session IX.</li>
-                                        <li className="">14.30/15.00 - Coffee Break</li>
-                                        <li className="">15.00/16.30 - Session X.</li>
-                                        <li className="">16.30/17.00 - Coffee Break</li>
-                                        <li className="">17.00/18.30 - Closing Ceremony</li>
-                                    </ul>
-                                )}
+                                    {page === 2 && (
+                                        <ul className="my-auto gap-y-4 grid h-max">
+                                            <li className="">9.00/10.00 - Session VII.</li>
+                                            <li className="">10.00/10.30 - Coffee Break</li>
+                                            <li className="">10.30/12.00 - Session VIII.</li>
+                                            <li className="">12.00/13.30 - Lunch Break</li>
+                                            <li className="">13.30/14.30 - Session IX.</li>
+                                            <li className="">14.30/15.00 - Coffee Break</li>
+                                            <li className="">15.00/16.30 - Session X.</li>
+                                            <li className="">16.30/17.00 - Coffee Break</li>
+                                            <li className="">17.00/18.30 - Closing Ceremony</li>
+                                        </ul>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>

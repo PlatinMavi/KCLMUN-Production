@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import disec from "../assets/disec.webp"
-import nato from "../assets/nato.png"
+import nato from "../assets/ECHR.png"
 import europeancouncil from "../assets/eu.jpg"
 import placeholder from "../assets/123.jpg"
 import unesco from "../assets/unesco.jpg"
@@ -35,14 +35,14 @@ export default function Committes(){
         switch(toSwitch){
             case "disec":
                 setCurrentBg(disec)
-                h1.innerHTML = "DISEC"
+                h1.innerHTML = "GA1: DISEC"
                 p1.innerHTML = "The Disarmament and International Security Committee (DISEC) is one of the six main committees of the United Nations General Assembly. Established in 1945, DISEC focuses on disarmament, global security, and the prevention of armed conflicts. Its mandate includes addressing issues such as nuclear proliferation, conventional weapons control, and disarmament treaties. DISEC serves as a forum for member states to collaborate on solutions to pressing international security challenges."
 
                 break
             case "nato":
                 setCurrentBg(nato)
-                h1.innerHTML = "NATO"
-                p1.innerHTML = "NATO, the North Atlantic Treaty Organization, is a military alliance formed in 1949 to ensure the collective defense of its member states against external aggression. Comprising 30 member countries as of 2022, NATO serves as a cornerstone of transatlantic security and cooperation. The organization's core principles include collective defense, crisis management, and cooperative security, aimed at maintaining peace and stability in the Euro-Atlantic region. NATO's activities range from joint military exercises and operations to diplomatic dialogue and partnerships with non-member states, contributing to global security efforts."
+                h1.innerHTML = "ECHR"
+                p1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tempore minus veritatis officiis soluta earum. Quos dolor tempora veritatis aut labore, voluptates, velit voluptatum dolorum aliquam iste, repudiandae autem libero."
 
                 break
             case "European Council":
@@ -53,7 +53,7 @@ export default function Committes(){
                 break
             case "ICC":
                 setCurrentBg(placeholder)
-                h1.innerHTML = "ICC"
+                h1.innerHTML = "CABINET"
                 p1.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tempore minus veritatis officiis soluta earum. Quos dolor tempora veritatis aut labore, voluptates, velit voluptatum dolorum aliquam iste, repudiandae autem libero."
 
                 break
@@ -71,7 +71,7 @@ export default function Committes(){
                 break
             case "LEGAL":
                 setCurrentBg(legal)
-                h1.innerHTML = "LEGAL"
+                h1.innerHTML = "GA6: LEGAL"
                 p1.innerHTML = "The Legal Committee, also known as the Sixth Committee, is a vital component of the United Nations General Assembly. Established in 1946, its primary focus lies in legal matters concerning international law, treaties, and the rule of law at the global level. The committee plays a pivotal role in deliberating on issues ranging from the codification of international law to the settlement of disputes between states. Through its sessions, the Legal Committee fosters dialogue and cooperation among UN member states to promote adherence to legal principles and uphold the foundation of international justice."
 
                 break
@@ -81,31 +81,31 @@ export default function Committes(){
 
     return(
         <div className="pt-20 overflow-x-hidden bg-black">
-            <div className="h-screen mx-6 p-4">
+            <div className="sm:h-screen min-h-screen mx-6 p-4">
                 <div className="h-[60%] my-4 relative ">
-                    <img className="h-full w-full object-cover rounded-lg opacity-40" src={currentbg} alt="" />
+                    <img className="sm:h-full h-[60vh] w-full object-cover rounded-lg opacity-40" src={currentbg} alt="" />
                     <div className="absolute top-12 left-12">
-                        <h1 className=" text-white text-4xl font-bold" id="h1">DISEC</h1>
-                        <p className="mt-4 text-gray-200 w-1/2 break-words text-lg" id="p1">The Disarmament and International Security Committee (DISEC) is one of the six main committees of the United Nations General Assembly. Established in 1945, DISEC focuses on disarmament, global security, and the prevention of armed conflicts. Its mandate includes addressing issues such as nuclear proliferation, conventional weapons control, and disarmament treaties. DISEC serves as a forum for member states to collaborate on solutions to pressing international security challenges.</p>
+                        <h1 className=" text-white text-4xl font-bold" id="h1">GA1: DISEC</h1>
+                        <p className="mt-4 text-gray-200 nobar sm:w-1/2 w-5/6 h-52 overflow-scroll break-words sm:text-lg text-sm" id="p1">The Disarmament and International Security Committee (DISEC) is one of the six main committees of the United Nations General Assembly. Established in 1945, DISEC focuses on disarmament, global security, and the prevention of armed conflicts. Its mandate includes addressing issues such as nuclear proliferation, conventional weapons control, and disarmament treaties. DISEC serves as a forum for member states to collaborate on solutions to pressing international security challenges.</p>
                     
                         <button className="bg-[#00FFCC] rounded-md px-4 py-2 text-black text-lg mt-4 text-center">Study Guide</button>
                         <button className="border-2 border-[#00FFCC] ml-4 rounded-md px-4 py-2 text-white text-lg mt-4 text-center">ROP</button>
                     </div> 
                 </div>
-                <h2 className="text-4xl text-white my-4 font-bold">
+                <h2 className="text-4xl text-white my-4 sm:mt-0 mt-32 font-bold">
                     Other Committes:
                 </h2>
-                <div className="grid grid-cols-7 max-w-screen gap-4">
+                <div className="grid sm:grid-cols-7 grid-cols-1 max-w-screen gap-4">
                     <button className="relative" onClick={()=>HandleCommitteClick("disec")}>
                         <img className="h-44 w-full object-cover rounded-lg opacity-60" src={disec} alt=""/>
                         <h1 className="text-2xl absolute top-0 left-4 text-white my-4 font-semibold">
-                            DISEC
+                            GA1: DISEC
                         </h1>
                     </button>
                     <button className="relative" onClick={()=>HandleCommitteClick("nato")}>
                         <img className="h-44 w-full object-cover rounded-lg opacity-60" src={nato} alt=""/>
                         <h1 className="text-2xl absolute top-0 left-4 text-white my-4 font-semibold">
-                            NATO
+                            ECHR
                         </h1>
                     </button>
                     <button className="relative" onClick={()=>HandleCommitteClick("European Council")}>
@@ -117,7 +117,7 @@ export default function Committes(){
                     <button className="relative" onClick={()=>HandleCommitteClick("ICC")}>
                         <img className="h-44 w-full object-cover rounded-lg opacity-60" src={placeholder} alt=""/>
                         <h1 className="text-2xl absolute top-0 left-4 text-white my-4 font-semibold">
-                            ICC
+                            CABINET
                         </h1>
                     </button>
                     <button className="relative" onClick={()=>HandleCommitteClick("UNESCO")}>
@@ -135,7 +135,7 @@ export default function Committes(){
                     <button className="relative" onClick={()=>HandleCommitteClick("LEGAL")}>
                         <img className="h-44 w-full object-cover rounded-lg opacity-60" src={legal} alt=""/>
                         <h1 className="text-2xl absolute top-0 left-4 text-white my-4 font-semibold">
-                            LEGAL
+                            GA6: LEGAL
                         </h1>
                     </button>
                 </div>
