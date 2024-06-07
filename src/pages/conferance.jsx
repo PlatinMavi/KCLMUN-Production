@@ -43,7 +43,7 @@ export default function Conferance() {
             <section className="min-h-screen p-8  bg-black">  
                 <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-white">Application</h2>
                 <hr className="w-1/2 mx-auto" />
-                <div className=" mx-auto grid p-12 grid-cols-1 gap-y-12 sm:grid-cols-3">
+                <div className=" mx-auto container grid p-12 grid-cols-1 gap-y-12 sm:grid-cols-3">
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={delegate} alt="" />
