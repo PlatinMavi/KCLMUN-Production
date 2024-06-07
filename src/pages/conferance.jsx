@@ -43,10 +43,10 @@ export default function Conferance() {
             <section className="min-h-screen p-8  bg-black">  
                 <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-white">Application</h2>
                 <hr className="w-1/2 mx-auto" />
-                <div className="container mx-auto grid p-12 grid-cols-1 gap-y-12 sm:grid-cols-3">
+                <div className=" mx-auto grid p-12 grid-cols-1 gap-y-12 sm:grid-cols-3">
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={delegate} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={delegate} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -62,7 +62,7 @@ export default function Conferance() {
                     </div>
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={delegate2} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={delegate2} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -78,7 +78,7 @@ export default function Conferance() {
                     </div>
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="https://forms.gle/wzqy4G5c4DKS1Cdf6#">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={chair} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={chair} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://forms.gle/wzqy4G5c4DKS1Cdf6">
@@ -94,7 +94,7 @@ export default function Conferance() {
                     </div>
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={crisis} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={crisis} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -110,7 +110,7 @@ export default function Conferance() {
                     </div>
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="https://forms.gle/mBuoCwD3xsaL3Rp96">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={admin} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={admin} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="https://forms.gle/mBuoCwD3xsaL3Rp96">
@@ -126,7 +126,7 @@ export default function Conferance() {
                     </div>
                     <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
-                            <img class="rounded-t-lg h-96 object-cover w-full" src={press} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={press} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
