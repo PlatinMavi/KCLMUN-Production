@@ -39,14 +39,20 @@ export default function Conferance() {
 
     return (
         <div className="min-h-screen  py-20">
-
+            <section class="bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+                    
+                    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">Application</h1>
+                    <p class="mb-8 text-lg font-normal  lg:text-xl sm:px-16 lg:px-48 text-gray-200">Secure your place at Kocaeli's one of the most prestigious MUN conferance !</p>
+                    
+                </div>
+                <div class="bg-gradient-to-b to-transparent from-[#00FFCC] w-full h-[35vh] absolute top-0 left-0 z-0"></div>
+            </section>
             <section className="min-h-screen p-8  bg-black">  
-                <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-white">Application</h2>
-                <hr className="w-1/2 mx-auto" />
                 <div className=" mx-auto container grid p-12 grid-cols-1 gap-y-12 sm:grid-cols-3">
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
-                            <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={delegate} alt="" />
+                            <img class="rounded-t-lg sm:h-96 h-48 object-cover  w-full" src={delegate} alt="" />
                         </a>
                         <div class="p-5">
                             <a href="#">
@@ -60,7 +66,7 @@ export default function Conferance() {
                             </a>
                         </div>
                     </div>
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={delegate2} alt="" />
                         </a>
@@ -76,7 +82,7 @@ export default function Conferance() {
                             </a>
                         </div>
                     </div>
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="https://forms.gle/wzqy4G5c4DKS1Cdf6#">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={chair} alt="" />
                         </a>
@@ -92,7 +98,7 @@ export default function Conferance() {
                             </a>
                         </div>
                     </div>
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={crisis} alt="" />
                         </a>
@@ -108,7 +114,7 @@ export default function Conferance() {
                             </a>
                         </div>
                     </div>
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="https://forms.gle/mBuoCwD3xsaL3Rp96">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={admin} alt="" />
                         </a>
@@ -124,7 +130,7 @@ export default function Conferance() {
                             </a>
                         </div>
                     </div>
-                    <div class="max-w-sm max-h-sm  border border-gray-200 rounded-lg shadow bg-[#1c1c1c]">
+                    <div class="max-w-sm max-h-sm rounded-lg shadow bg-[#1c1c1c]">
                         <a href="#">
                             <img class="rounded-t-lg sm:h-96 h-48 object-cover w-full" src={press} alt="" />
                         </a>
@@ -216,29 +222,31 @@ export default function Conferance() {
                     </div>
                 </div>
             </section>
-            <h1 className="mt-4 mb-4 text-4xl text-center text-white int font-bold">Venue & Transportation</h1>
-            {/* <hr className="mx-auto mb-4 border w-2/3" /> */}
-            <div id="map" className="container  h-96 mx-auto"></div>
-            <ul className="container mx-auto mt-4 text-md grid sm:grid-cols-3 gap-8 text-center text-white">
-                <div className="w-2/3 mx-auto">
-                    <h3 className="text-2xl my-4 font-bold">Option 1</h3>
-                    <li className="border-t">
-                        You can come by train, get off at the area closest to the tram stop, then take the tram and get off at the congress center.
-                    </li>
-                </div>
-                <div className="w-2/3 mx-auto">
-                    <h3 className="text-2xl my-4 font-bold">Option 2</h3>
-                    <li className="border-t">
-                        You can use bus number 200, which departs from Kartal Perons, and get off at the area closest to the tram stop.
-                    </li>
-                </div>
-                <div className="w-2/3 mx-auto">
-                    <h3 className="text-2xl my-4 font-bold">Option 3</h3>
-                    <li className="border-t">
-                        You can use our shuttle vehicle that will depart from Tuzla.
-                    </li>
-                </div>
-            </ul>
+            <div className="bg-black p-4">
+                <h1 className="mt-4 mb-4 text-4xl text-center text-white int font-bold">Venue & Transportation</h1>
+                {/* <hr className="mx-auto mb-4 border w-2/3" /> */}
+                <div id="map" className="container  h-96 mx-auto"></div>
+                <ul className="container mx-auto mt-4 text-md grid sm:grid-cols-3 gap-8 text-center text-white">
+                    <div className="w-2/3 mx-auto">
+                        <h3 className="text-2xl my-4 font-bold">Option 1</h3>
+                        <li className="border-t">
+                            You can come by train, get off at the area closest to the tram stop, then take the tram and get off at the congress center.
+                        </li>
+                    </div>
+                    <div className="w-2/3 mx-auto">
+                        <h3 className="text-2xl my-4 font-bold">Option 2</h3>
+                        <li className="border-t">
+                            You can use bus number 200, which departs from Kartal Perons, and get off at the area closest to the tram stop.
+                        </li>
+                    </div>
+                    <div className="w-2/3 mx-auto">
+                        <h3 className="text-2xl my-4 font-bold">Option 3</h3>
+                        <li className="border-t">
+                            You can use our shuttle vehicle that will depart from Tuzla.
+                        </li>
+                    </div>
+                </ul>
+            </div>
             {/* <div className="container mx-auto my-8 border rounded-xl bg-[#1c1c1c] min-h-96">
                 <p className="mt-16 text-xl text-white font-thin text-center">Our Sponsors Are Yet To Be Displayed...</p>
             </div> */}
