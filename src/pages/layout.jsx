@@ -18,10 +18,10 @@ const Layout = () => {
                 <div className="container flex justify-between mx-auto">
                     <div className="mt-4 gap-x-12 flex font-bold">
                         <Link to={"/"} className="sm:text-5xl text-3xl ml-4 sm:ml-0 font-extrabold">KCLMUN</Link>
-                        <Link className=" hidden sm:block text-2xl mt-2" to={"/conferance"}>CONFERANCE</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/conferance"}>CONFERENCE</Link>
                         {/* <Link className=" hidden sm:block text-2xl mt-2" to={"/faq"}>FAQ</Link> */}
                         <Link className=" hidden sm:block text-2xl mt-2" to={"/about"}>ABOUT</Link>
-                        <Link className=" hidden sm:block text-2xl mt-2" to={"/committes"}>COMMITTES</Link>
+                        <Link className=" hidden sm:block text-2xl mt-2" to={"/committes"}>COMMITTEES</Link>
                         <button onClick={()=>handledropdown()} className="w-8 -translate-y-1 sm:hidden absolute right-4"><hr className="mt-2 border" /> <hr className="mt-[0.625rem] border" /> <hr className="mt-3 border" /></button>
                     </div>
                     <div className="">
@@ -29,13 +29,13 @@ const Layout = () => {
                     </div>
                 </div>
                 <div className=" bg-[#1c1c1cec] break-words mt-2 p-4 text-center hidden mx-auto" id="dropdown">
-                        <Link className=" text-xl mt-2" to={"/conferance"}>CONFERANCE</Link> <br />
+                        <Link className=" text-xl mt-2" to={"/conferance"}>CONFERENCE</Link> <br />
                         <hr className="w-1/2 my-1 mx-auto" />
                         {/* <Link className=" text-xl mt-2" to={"/faq"}>FAQ</Link> <br /> */}
                         {/* <hr className="w-2/3 my-1 mx-auto" /> */}
                         <Link className=" text-xl mt-2" to={"/about"}>ABOUT</Link> <br />
                         <hr className="w-1/2 my-1 mx-auto" />
-                        <Link className=" text-xl mt-2" to={"/committes"}>COMMITTES</Link>
+                        <Link className=" text-xl mt-2" to={"/committes"}>COMMITTEES</Link>
                 </div>
             </nav>
 

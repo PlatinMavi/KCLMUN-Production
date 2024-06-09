@@ -10,7 +10,7 @@ import admin from "../assets/admin.jpg"
 import press from "../assets/press.jpg"
 import crisis from "../assets/crisis.jpg"
 import delegate from "../assets/delegate.jpeg"
-import delegate2 from "../assets/delegate2.webp"
+import delegate2 from "../assets/delegate2.jpg"
 
 export default function Conferance() {
 
@@ -193,7 +193,7 @@ export default function Conferance() {
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     How much is the event fee and what is included?
                                 </h3>
-                                <p className="text-gray-400">Fees; Early Application 400, Normal Application 450, Late Application 500 Turkish Liras. The conference fee includes a welcome pack, coffee break snacks and lunch for 3 days during the conference. </p>
+                                <p className="text-gray-400">Fees have not been decided yet. Stay tuned</p>
                             </div>
                             <div className="mb-10">
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">

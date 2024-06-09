@@ -33,7 +33,7 @@ export default function Index() {
     }
 
     function GetCountdown() {
-        var countDownDate = new Date("July 2, 2024 9:00:00").getTime();
+        var countDownDate = new Date("November 11, 2024 9:00:00").getTime();
         var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -63,7 +63,7 @@ export default function Index() {
 
     function calculateDaysToJune9th() {
         const today = new Date();
-        const june9th = new Date(today.getFullYear(), 6, 2);
+        const june9th = new Date(today.getFullYear(), 10, 11);
         const oneDay = 24 * 60 * 60 * 1000;
 
         const daysRemaining = Math.round((june9th - today) / oneDay);
@@ -113,7 +113,7 @@ export default function Index() {
                             <h2 className="text-5xl font-bold text-center">Welcome Letter</h2>
                             <hr className="w-48 text-white mx-auto my-4" />
                             <p className="break-words">
-                            We are proud to introduce you to the conference we have come up with as a result of our long-term work and effort. In our conference that we will be holding on July 2-3-4, We are very excited about this conference that we will organize at the Congress Center. In the committees at our conference, our participants will discuss the common solutions  that are best suited for national problems. In between, our pr team will create a wonderful environment for you and adapt to the environment more quickly and allow you to have fun time. We have arranged the specific and important issues to be discussed in the committees for you together with our team. It is very important for us to be able to provide the environment in which you can express yourself in the best way. With our experienced team
+                            We are proud to introduce you to the conference we have come up with as a result of our long-term work and effort. In our conference that we will be holding on November 11-12-13, We are very excited about this conference that we will organize at the Congress Center. In the committees at our conference, our participants will discuss the common solutions  that are best suited for national problems. In between, our pr team will create a wonderful environment for you and adapt to the environment more quickly and allow you to have fun time. We have arranged the specific and important issues to be discussed in the committees for you together with our team. It is very important for us to be able to provide the environment in which you can express yourself in the best way. With our experienced team
                             in this conference, you can look at everything you are curious about thanks to our site and you can reach us for the things you want to ask about our team or conference.
                             </p>
                             <p className="break-words">
@@ -180,7 +180,7 @@ export default function Index() {
                         <p className="mx-auto sm:w-[500px] w-[300px] text-left break-words">
                         Most distinguished participants and esteemed guests,
 
-                        On the behalf of my team, I am honored to welcome you to the first Model United Nations Conference of Kocaeli that will be taking place on 11,12,13 June at Seka Congress Center. In my role as Secretary General, I am thrilled to see this assembly of sharp minds and enthusiastic individuals who
+                        On the behalf of my team, I am honored to welcome you to the first Model United Nations Conference of Kocaeli that will be taking place on 11,12,13 November at Seka Congress Center. In my role as Secretary General, I am thrilled to see this assembly of sharp minds and enthusiastic individuals who
                         are prepared to have meaningful discussions about global affairs.
 
                         The purpose of this conference is to offer an environment for fruitful discussion,
@@ -205,13 +205,13 @@ export default function Index() {
                             <div className="tabs grid grid-cols-9 h-full">
                                 <div className="sm:text-lg text-md col-span-2 border-r">
                                     <button onClick={() => HandleTabClick(0)} id="0" className="h-1/3 w-full flex justify-center border-b bg-white text-black rounded-tl-3xl">
-                                        <span className="h-max my-auto">July 2</span>
+                                        <span className="h-max my-auto">November 11</span>
                                     </button>
                                     <button onClick={() => HandleTabClick(1)} id="1" className="h-1/3 w-full flex justify-center ">
-                                        <span className="h-max my-auto">July 3</span>
+                                        <span className="h-max my-auto">November 12</span>
                                     </button>
                                     <button onClick={() => HandleTabClick(2)} id="2" className="h-1/3 w-full flex justify-center rounded-bl-3xl border-t">
-                                        <span className="h-max my-auto">July 4</span>
+                                        <span className="h-max my-auto">November 13</span>
                                     </button>
                                 </div>
                                 <div className="sm:text-xl text-md col-span-7 mx-auto text-left py-32">

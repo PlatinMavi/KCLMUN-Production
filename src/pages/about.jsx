@@ -283,7 +283,7 @@ export default function About() {
                         <div class="details">
                             <h2 class="text-[#fff] text-lg font-bold">Kuzey Salman
                             <br/>
-                            <span class="job-title">Under Secretary General</span>
+                            <span class="job-title">Head Of Crisis</span>
                             </h2>
                         </div>
                     </div>
@@ -335,16 +335,16 @@ export default function About() {
 
             <div className="grid sm:grid-cols-2 grid-cols-1 w-full p-8">
                 <div className="border-r min-h-96 text-right p-8">
-                    <h3 className="text-3xl">Our MISSION</h3>
-                    <p className="break-words text-gray-300">
+                    <h3 className="text-4xl">Our MISSION</h3>
+                    <p className="break-words text-lg text-gray-300">
                     Social Skills: To provide teens with skills such as establishing social relationships, improving language skills, awareness of responsibility, self-confidence, entrepreneurship, crisis management, public speaking, and expressing their own opinion.
                     World Views To raise awareness of world problems, to expand diplomatic and political knowledge, to instill awareness of being a world citizen.
                     A Brand-new Experience To increase the prevalence and promote this social event, which is felt to be missing in our city but is loved by our teens, with a large-scale event in Kocaeli.
                     </p>
                 </div>
                 <div className="border-l min-h-96 p-8">
-                    <h3 className="text-3xl">Our VISION</h3>
-                    <p className="break-words text-gray-300">
+                    <h3 className="text-4xl">Our VISION</h3>
+                    <p className="break-words text-lg text-gray-300">
                     To be a pioneer for a youth that is responsible, conscious and aware of environmental problems.
                     Developing young people's analysis and solution skills to international, political and diplomatic problems
                     Ensuring that the new generation gets used to academic activities and environments
